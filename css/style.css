@@ -1,0 +1,43 @@
+/* GLOBAL */
+html,body{
+    font-family: 'Work Sans', sans-serif;
+}
+section {
+    padding: 5rem 0;
+}
+.carouselFarm h2{
+    color: var(--bg-grey);
+    font-size: 120px;
+    font-weight: bold;
+    margin-left: -0.5em;
+
+}
+.carouselFarm .carousel__content h3{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: bold;
+
+}
+
+.carouselFarm .carousel__content p{
+    font-size: 20px;
+}
+ 
+.carouselFarm .carousel__content button{
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    font-weight: 600;
+    
+    border: none;
+    color: #fff;
+    background-color:#fb811e;
+    border-radius: 30px;
+    transition: all .5s;
+}
+.carouselFarm .carousel__content button:hover{
+    background: #009f4d;
+    color: #ffffff;
+}
+#carouselFarm 
