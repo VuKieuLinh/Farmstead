@@ -18,50 +18,75 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- main-lightbox css -->
+  <link rel="stylesheet" href="./css/lightbox.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
   <!-- main css  -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <!-- HEADER -->
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg stroke">
+        <div>
+          <h1>
+            <a class="navbar-brand index-responsive-color d-flex align-items-center" href="#">Farmstead
+              <i class="fa fa-leaf" aria-hidden="true"></i>
+            </a>
+          </h1>
+        </div>
+        <div class="navbar ml-lg-auto">
+          <div class="search-right ml-lg-3 HeaderSearch">
+            <form action="https://wp.w3layouts.com/farmstead/" method="GET" id="demo-2"><input type="search" name="s"
+                placeholder="Search"></form>
+
+
+
+
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
   <!-- CAROUSEL  -->
-  <section class="carouselFarm">
+  <section class="carouselFarm ">
     <div class="container-fluid px-4 ">
-      <div class="row gx-5">
-        <div class="col">
-         <div class="p-3 carousel__left">
-          <div class="carousel_left_content">
-          <h2>Farm</h2>  
+      <div class="row d-flex align-items-center">
+        <div class="col ">
+          <div class="p-3 carousel__left">
+            <div class="carousel_left_content">
+              <h2>Farm</h2>
+            </div>
+            <div class="carousel__content">
+              <h3>Welcome to Farmstead
+                <br>
+                where Natural Food is born!
+              </h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+              <button>LEARN MORE</button>
+            </div>
           </div>
-          <div class="carousel__content">
-            <h3>Welcome to Farmstead
-              <br>
-              where Natural Food is born!</h3>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-            <button >LEARN MORE</button>
-          </div>
-         </div>
         </div>
         <div class="col">
-          <div class="p-3 carousel__right">
-            <div id="carouselFarm" class="carousel slide">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselFarm" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselFarm" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselFarm" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/b1.jpg" class="d-block w-100" alt="b1">
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="./img/b1.jpg" class="d-block w-100" alt="b1">
-                </div>
-                <div class="carousel-item">
-                  <img src="./img/b8.jpg" class="d-block w-100" alt="b8">
-                </div>
-                <div class="carousel-item">
-                  <img src="./img/b4.jpg" class="d-block w-100" alt="b4">
-                </div>
+              <div class="carousel-item">
+                <img src="./img/b4.jpg" class="d-block w-100" alt="b4">
               </div>
-              
+              <div class="carousel-item">
+                <img src="./img/b8.jpg" class="d-block w-100" alt="b8">
+              </div>
             </div>
 
           </div>
@@ -72,15 +97,290 @@
 
 
 
-     
+
+  </section>
+  <!-- FEATURE  -->
+  <section class="features">
+    <div class="container">
+      <div class="container px-lg-5">
+        <div class="row mx-lg-n5">
+          <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col col-xl-6   features__left heading">
+            <h5>Grow Naturally</h5>
+            <h3>Leaders in the field</h3>
+            <p>Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est. Quisque ut
+              lectus consequat, venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit. Suspendisse non init
+              magnaa velit efficitur, dolor eget ex fermentum.</p>
+            <button>DISCOVER MORE</button>
+          </div>
+          <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col col-xl-6  features__right">
+            <div class="container">
+              <div class="row row-cols-2">
+                <div class="col item">
+                  <div class="icon">
+                    <img src="./img/img4.png" alt="">
+                  </div>
+                  <h4>
+                    <a href="about" class="title_head">Natural Product </a>
+                  </h4>
+                </div>
+                <div class="col item">
+                  <div class="icon">
+                    <img src="./img/img2.png" alt="">
+                  </div>
+                  <h4>
+                    <a href="about" class="title_head">Wheat Cultivation </a>
+                  </h4>
+                </div>
+                <div class="col item">
+                  <div class="icon">
+                    <img src="./img/img1.png" alt="">
+                  </div>
+                  <h4>
+                    <a href="about" class="title_head">Modern Truck </a>
+                  </h4>
+                </div>
+                <div class="col item">
+                  <div class="icon">
+                    <img src="./img/img3.png" alt="">
+                  </div>
+                  <h4>
+                    <a href="about" class="title_head">Organic </a>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- SERVICE  -->
+  <section class="service">
+    <div class="container position-relative">
+      <div class="title position-relative">
+        <div class="container px-lg-5">
+          <div class="row mx-lg-n5">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 heading">
+              <h5>What we do</h5>
+              <h3>Why Choose Our Fresh Organic Foods
+              </h3>
+            </div>
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+              <p>Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque, eaque ipsa quae ab illo
+                inventore.Sed ut perspiciatis unde omnis iste natus error sit.</p>
+            </div>
+            <h4 class="title-bg-content">Service</h4>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class=" col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 item">
+            <div class="card">
+              <div class="card_header position-relative boder-0">
+                <a href="https://wp.w3layouts.com/farmstead/services-page/">
+                  <img src="./img/service1.jpg" alt="">
+                </a>
+              </div>
+              <div class="card_body">
+                <span>Natural</span>
+                <a href="https://wp.w3layouts.com/farmstead/services-page/">Agriculture Products</a>
+                <p>Sed ut perspiciatis unde omnis iste natus sit accusantium doloremque laudantium, totam rem aperiam
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 item">
+            <div class="card">
+              <div class="card_header position-relative boder-0">
+                <a href="https://wp.w3layouts.com/farmstead/services-page/">
+                  <img src="./img/service2.jpg" alt="">
+                </a>
+              </div>
+              <div class="card_body">
+                <span>Agriculture</span>
+                <a href="https://wp.w3layouts.com/farmstead/services-page/">Fresh Vegetables</a>
+                <p>Sed ut perspiciatis unde omnis iste natus sit accusantium doloremque laudantium, totam rem aperiam
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class=" col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 item">
+            <div class="card">
+              <div class="card_header position-relative boder-0">
+                <a href="https://wp.w3layouts.com/farmstead/services-page/">
+                  <img src="./img/service3.jpg" alt="">
+                </a>
+              </div>
+              <div class="card_body">
+                <span>Farm</span>
+                <a href="https://wp.w3layouts.com/farmstead/services-page/">Organic Products</a>
+                <p>Sed ut perspiciatis unde omnis iste natus sit accusantium doloremque laudantium, totam rem aperiam
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- QUALITY  -->
   <!-- GALLERY  -->
-  <!-- CUSTOMER  -->
+  <section class="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-6 gallery-img-grid hover14 column">
+          <div class="gallery_effectt heading">
+            <h5>Gallery</h5>
+            <h3>Our Products</h3>
+            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo.</p>
+            <button>DISCOVER MORE</button>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 gallery-img-grid hover14 column">
+          <div class="gallery_effect">
+            <a href="./img/g2.jpg" data-lightbox="gallery">
+              <img src="./img/g2.jpg" alt="g2">
+              <h5>Fresh Carrots</h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 gallery-img-grid hover14 column">
+          <div class="gallery_effect">
+            <a href="./img/g3.jpg" data-lightbox="gallery">
+              <img src="./img/g3.jpg" alt="g3">
+              <h5>Strawberry</h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 gallery-img-grid hover14 column">
+          <div class="gallery_effect">
+            <a href="./img/g6.jpg" data-lightbox="gallery">
+              <img src="./img/g6.jpg" alt="g6">
+              <h5>Our Farm</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-6 gallery-img-grid hover14 column">
+          <div class="gallery_effect">
+            <a href="./img/g5.jpg" data-lightbox="gallery">
+              <img src="./img/g5.jpg" alt="g5">
+              <h5>Fresh Apples</h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 gallery-img-grid hover14 column">
+          <div class="gallery_effect">
+            <a href="./img/g1.jpg" data-lightbox="gallery">
+              <img src="./img/g1.jpg" alt="g1">
+              <h5>Awesome Fields</h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 gallery-img-grid hover14 column">
+          <div class="gallery_effect">
+            <a href="./img/g7.jpg" data-lightbox="gallery">
+              <img src="./img/g7.jpg" alt="g7">
+              <h5>Fresh Grapes</h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 gallery-img-grid hover14 column">
+          <div class="gallery_effect">
+            <a href="./img/g8.jpg" data-lightbox="gallery">
+              <img src="./img/g8.jpg" alt="g8">
+              <h5>Hot Papper</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- FEEDBACK  -->
+  <section class="feedback">
+    <div id="feedback__customer" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#feedback__customer" data-slide-to="0" class="active"></li>
+        <li data-target="#feedback__customer" data-slide-to="1"></li>
+        <li data-target="#feedback__customer" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container px-lg-5">
+            <div class="row mx-lg-n5 ">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col col-xl-6 customer">
+                <img src="./img/testi1.jpg" alt="testi1">
+                <h3>Dennis wilson</h3>
+                <p>Customer</p>
+              </div>
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col col-xl-6 Customer_feedback">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab beatae voluptas doloremque
+                  obcaecati sequi voluptates saepe quasi sint dolorum cupiditate asperiores at consequatur corporis,
+                  perspiciatis, quibusdam nostrum ullam harum quisquam recusandae. Eum quod ut cum reprehenderit
+                  voluptatem magnam accusamus saepe. Omnis suscipit dolor expedita, perferendis, tempora nesciunt
+                  explicabo inventore quod, in facilis molestias rerum quibusdam itaque aut fuga accusamus.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container px-lg-5">
+            <div class="row mx-lg-n5">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col col-xl-6 customer">
+                <img src="./img/testi2.jpg" alt="testi1">
+                <h3>Dennis wilson</h3>
+                <p>customer</p>
+              </div>
+              <div class="ccol-12 col-sm-12 col-md-12 col-lg-6 col col-xl-6 Customer_feedback">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab beatae voluptas doloremque
+                  obcaecati sequi voluptates saepe quasi sint dolorum cupiditate asperiores at consequatur corporis,
+                  perspiciatis, quibusdam nostrum ullam harum quisquam recusandae. Eum quod ut cum reprehenderit
+                  voluptatem magnam accusamus saepe. Omnis suscipit dolor expedita, perferendis, tempora nesciunt
+                  explicabo inventore quod, in facilis molestias rerum quibusdam itaque aut fuga accusamus.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="container px-lg-5">
+            <div class="row mx-lg-n5">
+              <div class="col-12 col-sm-12 col-md-12 col-lg-6 col col-xl-6 customer">
+                <img src="./img/testi3.jpg" alt="testi3">
+                <h3>Dennis wilson</h3>
+                <p>customer</p>
+              </div>
+              <div class="ccol-12 col-sm-12 col-md-12 col-lg-6 col col-xl-6 Customer_feedback">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab beatae voluptas doloremque
+                  obcaecati sequi voluptates saepe quasi sint dolorum cupiditate asperiores at consequatur corporis,
+                  perspiciatis, quibusdam nostrum ullam harum quisquam recusandae. Eum quod ut cum reprehenderit
+                  voluptatem magnam accusamus saepe. Omnis suscipit dolor expedita, perferendis, tempora nesciunt
+                  explicabo inventore quod, in facilis molestias rerum quibusdam itaque aut fuga accusamus.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
   <!-- FOOTER  -->
 
 
 
+  <!-- BACK TO TOP  -->
+  <a href="#"  class="backToTop cd-top text-replace js-cd-top">
+    <button type="button" class="btn btn-success">
+      <i class="fa-solid fa-arrow-turn-up"></i>
+    </button>
+  </a>
 
   <!-- jquery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -91,6 +391,11 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
+  <!-- lightbox  -->
+  <script src="./js/lightbox.min.js"></script>
+  <!-- back to top  -->
+  <script src="./js/util.js"></script>
+  <script src="./js/main_backToTop.js"></script>
 </body>
 
 </html>
