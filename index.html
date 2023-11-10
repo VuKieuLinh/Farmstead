@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body  id="myBody">
   <!-- HEADER -->
   <header>
     <div class="container">
@@ -38,16 +38,40 @@
             </a>
           </h1>
         </div>
-        <div class="navbar ml-lg-auto">
+        <div class="navbar ml-lg-auto header_right">
           <div class="search-right ml-lg-3 HeaderSearch">
-            <form action="https://wp.w3layouts.com/farmstead/" method="GET" id="demo-2"><input type="search" name="s"
-                placeholder="Search"></form>
 
-
-
-
+            <form action="https://wp.w3layouts.com/farmstead/" method="GET" id="demo-2">
+              <input type="search" name="s" placeholder="Search">
+            </form>
+            <div class="container py-5">
+              <div class="mx-auto py-3">
+                <button class="btn" id="switchButton" title="Click to switch theme">
+                  <i class="far fa-moon"></i>
+                  <i class="far fa-sun"></i>
+                </button>
+          
+              </div>
+            
+            </div>
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">HOME</a>
+                <a class="dropdown-item" href="#">ABOUT</a>
+                <a class="dropdown-item" href="#">SERVIECE</a>
+                <a class="dropdown-item" href="#">BLOG POSTS</a>
+                <a class="dropdown-item" href="#">LANDING PAGE</a>
+                <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
+                <a class="dropdown-item" href="#">404 PAGE</a>
+              </div>
+            </li>
           </div>
         </div>
+          
       </nav>
     </div>
   </header>
@@ -225,6 +249,133 @@
     </div>
   </section>
   <!-- QUALITY  -->
+  <section class="quality">
+    <div class="container py-md-5 py-4">
+      <div class="row mx-lg-n5">
+        <div class="col-lg-6 about-right-faq align-self quality_left">
+          <h5>Why choose us</h5>
+          <h3>Quality food is the most important thing in our life</h3>
+          <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae, fugiat.</p>
+          <div class="row mx-lg-n5">
+            <div class="col py-3 px-lg-5 ">
+              <span>
+                <i class="fa-solid fa-users"></i>
+              </span>
+              <div class="detail">
+                <h4>Qualified Staff</h4>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit.</p>
+              </div>
+            </div>
+            <div class="col py-3 px-lg-5 ">
+              <span>
+                <i class="fa-solid fa-life-ring"></i>
+              </span>
+              <div class="detail">
+                <h4>Excellent Service</h4>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-5 offset-lg-1 offset-md-2 left-wthree-img mt-lg-0 mt-sm-5 mt-4 position-relative quality_right">
+          <img src="./img/image.jpg" alt="image">
+          <div class="imginfo__box">
+            <h6>36+</h6>
+            <p>YEARS OF EXPERIENCE</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="homePage_serviece">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col col-xl-4 features15-col-text">
+          <a href="#url" class="d-flex feature-unit">
+            <div class="col-3">
+              <img src="./img/img5.png" alt="img5">
+            </div>
+            <div class="col-9">
+              <div class="features15-para">
+                <h4>Agriculture</h4>
+                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis. </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col col-xl-4  features15-col-text">
+          <a href="#url" class="d-flex feature-unit">
+            <div class="col-3">
+              <img src="./img/img6.png" alt="">
+            </div>
+            <div class="col-9">
+              <div class="features15-para">
+                <h4>Fresh</h4>
+                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis. </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col col-xl-4  features15-col-text">
+          <a href="#url" class="d-flex feature-unit">
+            <div class="col-3">
+              <img src="./img/img7.png" alt="">
+            </div>
+            <div class="col-9">
+              <div class="features15-para">
+                <h4>Natural</h4>
+                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis. </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col col-xl-4  features15-col-text">
+          <a href="#url" class="d-flex feature-unit">
+            <div class="col-3">
+              <img src="./img/img8.png" alt="">
+            </div>
+            <div class="col-9">
+              <div class="features15-para">
+                <h4>Farm</h4>
+                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis. </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col col-xl-4  features15-col-text">
+          <a href="#url" class="d-flex feature-unit">
+            <div class="col-3">
+              <img src="./img/img9.png" alt="">
+            </div>
+            <div class="col-9">
+              <div class="features15-para">
+                <h4>Organic</h4>
+                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis. </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col col-xl-4  features15-col-text">
+          <a href="#url" class="d-flex feature-unit">
+            <div class="col-3">
+              <img src="./img/img10.png" alt="">
+            </div>
+            <div class="col-9">
+              <div class="features15-para">
+                <h4>Dairy</h4>
+                <p>Ras effic itur metusga via suscipit consectetur adipisicing unde omnis. </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- GALLERY  -->
   <section class="gallery">
     <div class="container">
@@ -372,11 +523,74 @@
     </div>
   </section>
   <!-- FOOTER  -->
-
+  <footer>
+    <div class="w3l-footer-16">
+      <div class="w3l-footer-16-main py-5">
+        <div class="container py-4">
+          <div class="row footer-p">
+            <div class="col-lg-4 order-lg-1 order-3 mt-lg-0 mt-5">
+              <h4>
+                <a class="logo" href="https://wp.w3layouts.com/farmstead/#url">
+                  Farmstead
+                  <i class="fa-solid fa-leaf"></i>
+                </a>
+              </h4>
+              <p>Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam
+                eget turpis ornare, euismod ligul aeget, enenatis dui. </p>
+            </div>
+            <div class="col-lg-4 pl-lg-5 FooterContact">
+              <h3>FIND US</h3>
+              <div class="comlumn-2">
+                <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
+                <p>Phone
+                  <a href="tel:+12 23456790">+12 23456790</a>
+                </p>
+                <p>Email
+                  <a href="mailto:info@example.com">info@example.com</a>
+                </p>
+                <p>Fax
+                  <a href="tel:+ 11 367 21890">+ 11 367 21890</a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-7 order-lg-3 order-1 column mt-lg-0 mt-5">
+              <h3>NEWSLETTER</h3>
+              <div class="end-column FooterSubscribe">
+                <p>Subscribe to our mailing list and get updates to your email inbox.</p>
+                <form action class="subscribe d-flex mt-3" method="post">
+                  <input type="email" name="Email" placeholder="Email Address" required>
+                  <button>
+                    <i class="fa-solid fa-paper-plane"></i>
+                  </button>
+                </form>
+              </div>
+              <ul class="social mt-4 pt-2 FooterSocial">
+                <li>
+                  <a href="https://www.facebook.com/w3layouts/"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="https://in.linkedin.com/company/w3layouts"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/W3layouts"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="https://w3layouts.com/tag/email-templates/"><i class="fa-brands fa-google-plus-g"></i></a>
+                </li>
+                <li>
+                  <a href="https://w3layouts.com/"><i class="fa-brands fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
   <!-- BACK TO TOP  -->
-  <a href="#"  class="backToTop cd-top text-replace js-cd-top">
+  <a href="#" class="backToTop cd-top text-replace js-cd-top">
     <button type="button" class="btn btn-success">
       <i class="fa-solid fa-arrow-turn-up"></i>
     </button>
@@ -396,6 +610,8 @@
   <!-- back to top  -->
   <script src="./js/util.js"></script>
   <script src="./js/main_backToTop.js"></script>
+  <script src="./js/index.js"></script>
+
 </body>
 
 </html>
